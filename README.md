@@ -1,10 +1,17 @@
-# ADDRESS BOOK PROJECT DOCUMENTATION
-A simple C console-based Student Management System to add, view, search and edit student records. Supports unique ID check, email &amp; mobile validation, and menu-driven interaction. Data stored in memory; easy to compile and run for learning or small demos.
+# Address Book Project Documentation
+# Description:
+This Address Book project is a C program that allows users to manage their contacts efficiently. It provides functionality to create, search, edit, delete, and list contacts. The program features robust input validation and persists data by saving contacts to a CSV file.
+
+# Key features:
+Contact management with name, phone, and email fields
+Comprehensive input validation for all fields
+Case-insensitive search functionality
+Data persistence through file I/O operations
+User-friendly menu interface
 
 
 
-
-FILE STRUCTURE
+# FILE STRUCTURE
 contact.h       - Header file with data structures and function declarations
 contact.c       - Implementation of contact management functions
 file.h          - Header for file operations
@@ -15,8 +22,8 @@ populate.c      - Dummy contact data for testing
 contacts.csv    - Data file storing contacts in CSV format
 
 
-Sample Input/Output 
-Sample Input 1: Creating a Contact
+# Sample Input/Output 
+# Sample Input 1: Creating a Contact
 Address Book Menu:
 1. Create contact
 2. Search contact
@@ -29,7 +36,7 @@ Enter name: ranjitha m g
 Enter phone number: 9122567089
 Enter email: ranjithamg@gmail.com
 
-sample output 1: Listing Contacts
+# sample output 1: Listing Contacts
 Address Book Menu:
 1. Create contact
 2. Search contact
@@ -54,7 +61,7 @@ Phone : 1133557799
 Email : de@1.com
 ---------------------------------------------
 
-Sample Input 2: Searching Contacts
+# Sample Input 2: Searching Contacts
 Address Book Menu:
 1. Create contact
 2. Search contact
@@ -80,7 +87,7 @@ Name  : ranjitha
 Phone : 9107766442
 Email : ranjitha@gmail.com
 
-Sample Input 3: Editing a Contact
+# Sample Input 3: Editing a Contact
 Address Book Menu:
 1. Create contact
 2. Search contact
@@ -107,7 +114,7 @@ Enter your choice: 3
 Enter new email: rat@gmail.com
 Email updated successfully!
 
-Sample Input 4: Deleting a Contact
+# Sample Input 4: Deleting a Contact
 Address Book Menu:
 1. Create contact
 2. Search contact
@@ -128,7 +135,7 @@ Multiple contacts found. Enter the index number to delete (1-2): 2
 
 Deleting Contact: ranjitha | 9107766442 | ranjitha@gmail.com
 Contact deleted successfully!
-Sample Input 5: Exiting the Program
+# Sample Input 5: Exiting the Program
 Address Book Menu:
 1. Create contact
 2. Search contact
