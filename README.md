@@ -1,6 +1,6 @@
 # Address Book Project Documentation
 # Description:
-This Address Book project is a C program that allows users to manage their contacts efficiently. It provides functionality to create, search, edit, delete, and list contacts. The program features robust input validation and persists data by saving contacts to a CSV file.
+This Address Book project is a C program that allows users to manage their contacts efficiently. It provides functionality to create,search, edit, delete, and list contacts. The program features robust input validation and persists data by saving contacts to a CSV file.
 
 # Key features:
 Contact management with name, phone, and email fields
