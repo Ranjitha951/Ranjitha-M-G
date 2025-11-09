@@ -1,0 +1,48 @@
+ 🎵 MP3 Reader and Editor
+📌 Project Overview
+This project is a C-based MP3 metadata editor that allows you to read, validate, and update ID3 tags (like Title, Artist, Album, Year, and Comment) in .mp3 files.
+It demonstrates file handling, error checking, and data manipulation in C, making it a great project for embedded systems and systems programming learners.
+
+
+🚀 Features
+✅ Reads MP3 metadata (tags).\
+✅ Supports editing the following fields:
+-t → Title\
+-a → Artist\
+-A → Album\
+-y → Year (validated, must be 4-digit)\
+-c → Comment\
+✅ Preserves original audio content after editing.\
+✅ Handles invalid input gracefully (invalid year, wrong file type, missing arguments, etc.).\
+✅ Works directly with .mp3 files without external libraries.
+🛠 Tech Stack
+Language: C\
+Compiler: GCC / XC8 (Microchip)\
+Platform: Works on Linux/Windows\
+Concepts Used: File handling, endian conversion, error handling, memory management
+⚙ Usage
+🏗 Compilation
+bash gcc edit.c mp3.c -o mp3_editor
+
+▶ Running the Program
+bash ./mp3_editor <new_value> <file.mp3>
+
+📖 Examples
+bash ./mp3_editor -t "New Song Title" sample.mp3 ./mp3_editor -a "Gangadhar" sample.mp3 ./mp3_editor -y 2024 sample.mp3
+
+📂 Project Structure
+├── edit.c        # Core logic for MP3 editing
+├── mp3.c         # Helper functions
+├── mp3.h         # Header file
+├── sample.mp3    # Example file for testing
+└── README.md     # Project documentation
+🧩 How It Works
+Input Validation -- Ensures correct tag and .mp3 file.\
+Copy Header -- Reads MP3 header into a new file.\
+Edit Tag -- Replaces the specified tag with new content.\
+Copy Remaining Data -- Preserves original audio content.\
+Replace Old File -- Removes old file and renames updated file.
+
+
+
+
