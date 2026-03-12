@@ -1,0 +1,24 @@
+Check the option(encoding, decoding), image file, secret file are passed as arguments or not.
+if option is –e the go to encoding.
+If option is –d then go to decoding.
+Else print as unsupported option.
+If all looks good the check the image file extention is .bmp or not.
+If it is .bmp strore that name in the variable.
+Else stop by printing error message “please provide .bmp file”
+Then check for secret file is .txt or not
+If it is .txt then store the extention and file name in separate separate variables.
+Else stop by printing error message “please provide .txt file”
+Then check for output image file 
+If they have not provided then give default name “stego.bmp” and store it.
+If they have provided then check for .bmp…if it is bmp store it in a variable else stop by printing error message “please provide .bmp file”
+If everything goes fine then start the encoding by opening all the the files
+If all files opened successfully the check the capacity of the image that sectet data can fit into given image or not…
+If the image is sufficient then copy the first 54 bytes header form source image to stego image.
+Then encode the magic string that has been provided and write those encoded bytes to stego image
+After encoding the the magic string encode the Secret file Extention size… and write those encoded bytes to stego image
+Then Encode the secret file extention…. and write those encoded bytes to stego image
+After that encode the Secret file Size… and write those encoded bytes to stego image
+After encoding the secret file Size encode the secret file Data…. and write those encoded bytes to stego image
+Then encode the secreat data byte by byte and and write those encoded bytes to stego image..
+At last copy remainng bytes of source image to stego image byte by byte ..
+Finaaly close all the files….
